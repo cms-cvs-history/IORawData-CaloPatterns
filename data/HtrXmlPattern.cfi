@@ -13,8 +13,8 @@ untracked int32 samples_per_event     = 10          #Keep up to this many total 
 						    
 untracked bool write_root_file        = true        #When true, a root file with histograms for each channel is produced.
 untracked bool write_XML              = true        #When true, XML files containing the pattern data are produced.
-untracked bool single_XML_file        = true        #When true, all patterns are placed in a single
-                                                    #XML file (otherwise one file per channel).
+untracked bool single_XML_file        = false       #When true, all patterns are placed in a single
+                                                    #XML file (otherwise one file per crate).
 
 untracked string file_tag              = "example"  #A subdirectory named file_tag will be created beneath
 untracked string user_output_directory = "/tmp"     #user_output_directory and will contain all produced files.
